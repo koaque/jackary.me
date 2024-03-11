@@ -1,0 +1,48 @@
+.pageStyles {
+    padding: 96px;
+    display: flex;
+    flexDirection: column;
+    alignItems: center;
+    justifyContent: center;
+  }
+  
+  .headingStyles {
+    color: #663399;
+    fontFamily: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    textAlign: center;
+  }
+  
+  .headingAccentStyles {
+    color: #663399;
+  }
+  
+  .listStyles {
+    listStyle: none;
+    padding: 0;
+  }
+  
+  .listItemStyles {
+    marginBottom: 24px;
+    color: #222;
+  }
+  
+  .linkStyle {
+    color: #663399;
+    textDecoration: none;
+  }
+  
+  .badgeStyle {
+    marginLeft: 8px;
+    color: #fff;
+    backgroundColor: #11b981;
+    borderRadius: 8px;
+    padding: 4px 8px;
+  }
+  
+  .descriptionStyle {
+    color: #666;
+    fontSize: 14px;
+  }
+  
+  /* Add more styles as needed */
+  
