@@ -1,48 +1,183 @@
-.pageStyles {
-    padding: 96px;
-    display: flex;
-    flexDirection: column;
-    alignItems: center;
-    justifyContent: center;
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #004e92, #000428); 
+  padding-top: 60px;
+}
+
+
+.header {
+  margin-bottom: 20rem; 
+  color: white;
+  font-size: 2.5rem; 
+  position: fixed; /* or 'absolute' */
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  margin-top: 1rem;
+  width: 150px; 
+  height: auto;
+}
+
+.lists {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 600px; 
+}
+
+.listItem {
+  background: white;
+  margin-bottom: 2rem; 
+  border-radius: 25px;
+  padding: 1rem 5rem; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  list-style-type: none;
+  max-height : 24px;
+  min-height : 24px;
+  position: relative;
+}
+
+.link {
+  background: none;
+  border: none;
+  color: #004e92;
+  font-size: 1.25rem; 
+  cursor: pointer;
+}
+
+.iconPlaceholder {
+
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 0.75rem;
+  padding: 1rem 0;
+}
+
+@media (min-width: 768px) {
+  .header {
+    font-size: 1.5rem;
   }
-  
-  .headingStyles {
-    color: #663399;
-    fontFamily: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    textAlign: center;
+
+  .lists {
+    max-width: 90%;
   }
-  
-  .headingAccentStyles {
-    color: #663399;
+
+  .listItem {
+    padding: 0.75rem 1.5rem;
   }
-  
-  .listStyles {
-    listStyle: none;
-    padding: 0;
+
+  .link {
+    font-size: 1rem;
   }
-  
-  .listItemStyles {
-    marginBottom: 24px;
-    color: #222;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .header {
+    font-size: 1.25rem;
   }
-  
-  .linkStyle {
-    color: #663399;
-    textDecoration: none;
+
+  .lists {
+    max-width: 85%;
   }
-  
-  .badgeStyle {
-    marginLeft: 8px;
-    color: #fff;
-    backgroundColor: #11b981;
-    borderRadius: 8px;
-    padding: 4px 8px;
+
+  .listItem {
+    padding: 0.5rem 1rem;
   }
-  
-  .descriptionStyle {
-    color: #666;
-    fontSize: 14px;
+
+  .link {
+    font-size: 0.9rem;
   }
-  
-  /* Add more styles as needed */
-  
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .header {
+    font-size: 1rem;
+  }
+
+  .lists {
+    max-width: 100%;
+  }
+
+  .listItem {
+    padding: 0.25rem 0.5rem;
+  }
+
+  .link {
+    font-size: 0.8rem;
+  }
+
+  .footer {
+    font-size: 0.7rem;
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  align-self:center;
+  max-height : 30px;
+}
+
+.dropbtn-arrow {
+  font-size: 1.25rem; 
+  position: absolute; 
+  cursor: pointer;
+  right: 1rem; 
+  top: 50%; 
+  transform: translateY(-50%);
+}
+
+.dropbtn {
+  background-color: #ffffff; 
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+  max-height : 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  position: relative;
+}
+
+.dropbtn-text {
+  position: absolute;
+  width: 10rem;
+  background: none;
+  border: none;
+  color: #004e92;
+  font-size: 1.25rem; 
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: center;
+}
+
+.dropdown-content.show {
+  display: block;
+}
