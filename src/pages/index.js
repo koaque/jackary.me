@@ -33,7 +33,7 @@ const IndexPage = () => {
             </button>
             <div className="tooltip-container">
               <button className="tooltip-button" ToggleTooltip={setTooltipVisible}>Hover over me</button>
-              <div className="tooltip-text">This is a tooltip</div>
+              <div className="tooltip-text">This is a tooltip placeholder</div>
             </div>
           </li>
           <li className="listItem">
